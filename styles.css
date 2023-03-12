@@ -118,30 +118,30 @@ form .gender {
   }
 }
 
-@media only screen and (max-width: 804px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   h2 {
     font-size: 50px;
   }
   form {
-    width: 450px !important;
+    width: 460px !important;
   }
 
   form .gender {
     font-size: 21px;
     color: #fff;
-    width: 20%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
   }
 }
 
-@media only screen and (max-width: 517px) {
+@media only screen and (min-width: 481px) and (max-width: 620px) {
   h2 {
     font-size: 30px;
     padding: 0, 20px;
   }
   form {
-    width: 295px !important;
+    width: 500px !important;
   }
 
   .btn {
@@ -150,7 +150,7 @@ form .gender {
   form .gender {
     font-size: 21px;
     color: #fff;
-    width: 20%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
   }
