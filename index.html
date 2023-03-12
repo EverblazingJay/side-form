@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Sign Up Form</h2>
+    <form action="#">
+      <div class="form-field">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Name"
+          id="username"
+          required
+        />
+      </div>
+      <br />
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Email"
+          id="email-field"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <span id="email-error"></span>
+      </div>
+      <div class="form-field">
+        <label for="phone">Phone_No</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="+234"
+          id="phone"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <label for="gender">Gender</label>
+        <div class="gender">
+          <input type="radio" name="male" value="male" id="male" /><span
+            >Male</span
+          >
+          <input type="radio" name="male" value="female" id="female" /><span
+            >Female</span
+          >
+        </div>
+      </div>
+      <br />
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          id="password"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <button class="btn" type="submit" id="signup" onclick="message()">
+          Submit
+        </button>
+      </div>
+      <div class="message">
+        <div class="success" id="success">
+          Application successfully submitted!
+        </div>
+        <div class="caution" id="caution">Fields cant be empty</div>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

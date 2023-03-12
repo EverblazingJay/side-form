@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: auto;
+  background: #2d3b36 no-repeat center center fixed;
+  background-size: cover;
+}
+
+h2 {
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  padding-top: 30px;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0px;
+}
+
+#email-error {
+  color: #ff0000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 965px;
+  height: 450px;
+  padding: 30px;
+}
+
+label {
+  font-size: 27px;
+  color: #fff;
+}
+
+form .form-control {
+  font-size: 20px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 19px;
+  border: none;
+  border-radius: 7px;
+}
+
+form .gender {
+  font-size: 21px;
+  color: #fff;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  width: 200px;
+  height: 44px;
+  color: #2d3b36;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+  float: right;
+  box-shadow: 0 6px #cecece;
+  border-radius: 7px;
+  margin-right: 6px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background: #fff;
+  outline: none;
+  box-shadow: 0 4px #cecece;
+  top: 2px;
+}
+
+.btn:active {
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 #cecece;
+  top: 6px;
+}
+
+.message {
+  width: auto;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.message .success {
+  font-size: 24px;
+  color: #008000;
+  position: absolute;
+  display: none;
+}
+
+.message .caution {
+  font-size: 24px;
+  color: #ff0000;
+  position: absolute;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1035px) {
+  h2 {
+    font-size: 80px;
+  }
+  form {
+    width: 736px !important;
+  }
+}
+
+@media only screen and (max-width: 804px) {
+  h2 {
+    font-size: 50px;
+  }
+  form {
+    width: 450px !important;
+  }
+
+  form .gender {
+    font-size: 21px;
+    color: #fff;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 517px) {
+  h2 {
+    font-size: 30px;
+    padding: 0, 20px;
+  }
+  form {
+    width: 295px !important;
+  }
+
+  .btn {
+    width: 110px;
+  }
+  form .gender {
+    font-size: 21px;
+    color: #fff;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
